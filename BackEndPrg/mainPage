@@ -12,7 +12,7 @@
             <div class="search-bar">
                 <form action="/search.html" method="get">  
                     <input type="text" name="query" placeholder="검색...">
-                    <button type="submit"><img src="search_icon.png" alt="검색"></button>
+                    <button type="submit"><img src="image/search_icon.png" alt="검색"></button>
                 </form>
             </div>
             <div class="user-links">
@@ -36,7 +36,7 @@
         <main>
             <div class="logo">
                 <h1>IT's Shop</h1>
-                <img src="image/search_icon.png" alt="장바구니">
+                <img src="image/shop_icon.png" alt="장바구니">
             </div>
             <div class="site-address">사이트 주소</div>
         </main>
