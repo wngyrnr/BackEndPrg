@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT's Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="search-bar">
+                <form action="/search.html" method="get">  
+                    <input type="text" name="query" placeholder="검색...">
+                    <button type="submit"><img src="search-icon.png" alt="검색"></button>
+                </form>
+            </div>
+            <div class="user-links">
+                <a href="#">사이트맵</a>
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
+        </header>
+        
+        <aside class="menu">
+            <div class="menu-title">메뉴</div>
+            <div class="project-list">
+                <a href="/project1.html"><div class="project">프로젝트 1</div></a> 
+                <a href="/project2.html"><div class="project">프로젝트 2</div></a>
+                <a href="/project3.html"><div class="project">프로젝트 3</div></a>
+                <a href="/project4.html"><div class="project">프로젝트 4</div></a>
+                <a href="/project5.html"><div class="project">프로젝트 5</div></a>
+            </div>
+        </aside>
+        
+        <main>
+            <div class="logo">
+                <h1>IT's Shop</h1>
+                <img src="cart-icon.png" alt="장바구니">
+            </div>
+            <div class="site-address">사이트 주소</div>
+        </main>
+    </div>
+</body>
+</html>
 
