@@ -8,32 +8,45 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4801f;
     color: #fff;
+    height: 100vh; /* 전체 화면 높이 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
+    width: 100%;
 }
 
 header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
     padding: 10px;
 }
 
 .search-bar {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .search-bar input {
     padding: 8px;
     border: none;
     border-radius: 5px;
+    width: 300px; /* 기본 너비를 300px로 설정 */
+    transition: width 0.3s ease-in-out; /* 부드러운 너비 변화 효과 */
+}
+
+.search-bar input:focus {
+    width: 400px; /* 포커스 시 너비 확장 */
+    outline: none; /* 외곽선 제거 */
 }
 
 .search-bar button {
@@ -41,6 +54,12 @@ header {
     border: none;
     margin-left: 5px;
     cursor: pointer;
+}
+
+.user-links {
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
 
 .user-links a {
@@ -74,6 +93,12 @@ header {
     padding: 10px;
     text-align: center;
     font-weight: bold;
+}
+
+.project:hover {
+    background-color: #e67300;
+    color: #fff;
+    cursor: pointer;
 }
 
 main {
