@@ -1,139 +1,45 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4801f;
-  color: #fff;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.search-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.search-bar input {
-  padding: 8px;
-  border: none;
-  border-radius: 5px;
-  width: 300px;
-  transition: width 0.3s ease-in-out;
-}
-
-.search-bar input:focus {
-  width: 400px;
-  outline: none;
-}
-
-.search-bar button {
-  background: none;
-  border: none;
-  margin-left: 5px;
-  cursor: pointer;
-}
-
-.search-bar button img {
-  width: 24px;
-  height: 24px;
-}
-
-.user-links {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-}
-
-.user-links a {
-  margin-left: 15px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.menu {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.menu-title {
-  writing-mode: vertical-rl;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-
-.project-list {
-  margin-top: 10px;
-}
-
-.project {
-  background-color: #fff;
-  color: #f4801f;
-  margin: 5px 0;
-  padding: 10px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.project:hover {
-  background-color: #e67300;
-  color: #fff;
-  cursor: pointer;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.logo h1 {
-  font-size: 40px;
-}
-
-.logo img {
-  width: 80px;
-  height: 80px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-
-.site-address {
-  margin-top: 40px;
-  font-size: 18px;
-}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT's Shop</title>
+    <link rel="stylesheet" href="mainPageCss.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="search-bar">
+                <form action="/search.html" method="get">  
+                    <input type="text" name="query" placeholder="검색...">
+                    <button type="submit"><img src="image/search_icon.png" alt="검색"></button>
+                </form>
+            </div>
+            <div class="user-links">
+                <a href="#">Site Map</a>
+                <a href="login.html">Login</a>
+                <a href="#">Sign up</a>
+            </div>
+        </header>
+        
+        <aside class="menu">
+            <div class="menu-title">메뉴</div>
+            <div class="project-list">
+                <a href="/project1.html"><div class="project">프로젝트 1</div></a> 
+                <a href="/project2.html"><div class="project">프로젝트 2</div></a>
+                <a href="/project3.html"><div class="project">프로젝트 3</div></a>
+                <a href="/project4.html"><div class="project">프로젝트 4</div></a>
+                <a href="/project5.html"><div class="project">프로젝트 5</div></a>
+            </div>
+        </aside>
+        
+        <main>
+            <div class="logo">
+                <h1>IT's Shop</h1>
+                <img src="image/shop_icon.png" alt="장바구니">
+            </div>
+            <div class="site-address">Site Address</div>
+        </main>
+    </div>
+</body>
+</html>
