@@ -39,5 +39,5 @@
 ## <span style="color: red;">알려진 문제</span>
 
 - <b>폴더를 정리하면서 경로가 바뀌어, 경로들의 재설정이 필요</b>
-- <b>폴더의 경로를 수정하였으나, 현재 login.html 과 login.css의 연동이 안되는 오류 발생</b>
+- <b>폴더의 경로를 수정하였으나, 현재 login.html에서의 로그인 창이 안뜨는 오류 발생</b>
 - <b>register.css 제작 필요</b>
