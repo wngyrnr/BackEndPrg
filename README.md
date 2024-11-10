@@ -42,4 +42,4 @@
 - <b>폴더의 경로를 수정하였으나, 현재 login.html에서의 로그인 창이 안뜨는 오류 발생</b>
   <br><br>
 ## <span style="color: red;">commit</span>
-- <b>login.css에 register.html이 연동되어있었으나, register생성을 통한 분리제작</b>
+- <b>login.css에 register.html이 연동되어있었으나, register.css생성을 통한 분리제작</b>
