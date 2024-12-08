@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div,
+textarea,
+input {
+    box-sizing: border-box;
+}
+
+/* 배경 스타일 */
+.form-background {
+    background-color: #333;
+    padding: 30px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 폼 컨테이너 스타일 */
+.form-white {
+    background-color: white;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 폼 입력 필드 스타일 */
+.form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #f58026;
+    outline: none;
+}
+
+/* 이름 필드 정렬 */
+.form-Name {
+    padding: 10px;
+    width: 48%;
+    float: left;
+}
+
+.form-Name:first-child {
+    margin-right: 4%;
+    /* 이름 필드 간 간격 */
+}
+
+/* 너비 100% 필드 */
+.w-100 {
+    padding: 10px;
+    width: 100%;
+}
+
+/* 메시지 필드 스타일 */
+textarea.form-input {
+    height: 100px;
+    resize: none;
+}
+
+/* 구독과 버튼 섹션 */
+div:last-of-type {
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#sub {
+    margin: 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f58026;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #cc4e0a;
+    transform: scale(1.05);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .form-Name {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+    }
+}

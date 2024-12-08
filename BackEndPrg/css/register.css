@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f4801f; /* 주황색 배경 */
+  background-image: url(../img/test.jpg);
   color: #fff;
 }
 

@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(../img/4k\ Space\ And\ Clouds\ Wallpaper\ Ultra\ HD.jpg)
+  background: url(/BackEndPrg/img/test.jpg)
     no-repeat;
   /* background-color: #f18d00; */
   background-size: cover;

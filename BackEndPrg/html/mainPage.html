@@ -1,45 +1,61 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT's Shop</title>
-    <link rel="stylesheet" href="mainPageCss.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/BackEndPrg/css/mainPage.css" rel="stylesheet" />
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <div class="search-bar">
-                <form action="/search.html" method="get">  
-                    <input type="text" name="query" placeholder="검색...">
-                    <button type="submit"><img src="image/search_icon.png" alt="검색"></button>
-                </form>
-            </div>
-            <div class="user-links">
-                <a href="#">Site Map</a>
-                <a href="login.html">Login</a>
-                <a href="#">Sign up</a>
-            </div>
-        </header>
-        
-        <aside class="menu">
-            <div class="menu-title">메뉴</div>
-            <div class="project-list">
-                <a href="/project1.html"><div class="project">프로젝트 1</div></a> 
-                <a href="/project2.html"><div class="project">프로젝트 2</div></a>
-                <a href="/project3.html"><div class="project">프로젝트 3</div></a>
-                <a href="/project4.html"><div class="project">프로젝트 4</div></a>
-                <a href="/project5.html"><div class="project">프로젝트 5</div></a>
-            </div>
-        </aside>
-        
-        <main>
-            <div class="logo">
-                <h1>IT's Shop</h1>
-                <img src="image/shop_icon.png" alt="장바구니">
-            </div>
-            <div class="site-address">Site Address</div>
-        </main>
+    <header class="header">
+        <div class="header--logo"><a href="index.html">IT's Shop</a></div>
+        <div class="header--actions">
+            <div class="header--login"><a href="login.html">로그인</a></div>
+            <div class="header--register"><a href="register.html">회원가입</a></div>
+        </div>
+    </header>
+
+    <div class="main-background">
+        <h4 class="main-title">앗 컴퓨터 신발보다 싸다!</h4>
+        <p>부모님 컴퓨터 맞추는 심정으로 맞춰드리겠습니다.</p>
+        <button class="main-button" onclick="location.href='/BackEndPrg/html/board.html';">제품 둘러보기</button>
     </div>
+
+    <div class="content">
+        <h2 class="content-title">IT's Shop에 오신 것을 환영합니다!</h2>
+        <p class="content-description">
+            집에 가고 싶은데<br>
+            일이 너무 많구나<br>
+            언제 나는 살 수 있나
+        </p>
+        <div class="content-features">
+            <div class="feature-box">
+                <h3>집에</h3>
+                <p>이불이</p>
+            </div>
+            <div class="feature-box">
+                <h3>가고</h3>
+                <p>그렇게</p>
+            </div>
+            <div class="feature-box">
+                <h3>싶다</h3>
+                <p>따뜻할 수가 없는데</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="/BackEndPrg/html/contactUs.html">Contact Us</a>
+        </div>
+    </footer>
+
+    </form>
 </body>
+
 </html>
