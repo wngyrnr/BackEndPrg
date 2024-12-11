@@ -1,37 +1,119 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>게시판</title>
     <link rel="stylesheet" href="/BackEndPrg/css/board.css">
 </head>
+
 <body>
+    <header class="header">
+        <div class="header--logo"><a href="mainPage.html">IT's Shop</a></div>
+        <div class="header--actions">
+            <div class="header--login"><a href="mainPage.html">로그아웃</a></div>
+        </div>
+    </header>
+
     <!-- 게시판 컨테이너 -->
     <section class="board-container">
         <!-- 첫 번째 카드 -->
         <div class="card">
-            <div class="image-placeholder" id="image-placeholder-1">
-                <input type="file" id="image-upload-1" accept="image/*" />
-                <img src="/BackEndPrg/img/avatar.png">
+            <div class="image-placeholder">
+                <input type="file" id="image-upload-1" accept="image/*">
+                <img src="/BackEndPrg/img/avatar.png" alt="업로드된 이미지">
             </div>
-            <a href="detail.html" class="title">상품명</a>
-            <div class="category">카테고리</div>
-            <div class="price">18,000₩</div>
+            <a href="detail.html" class="title">Apple MacBook Pro 14"</a>
+            <div class="category">노트북</div>
+            <div class="price">2,900,000₩</div>
         </div>
 
         <!-- 두 번째 카드 -->
         <div class="card">
-            <div class="image-placeholder" id="image-placeholder-2">
-                <input type="file" id="image-upload-2" accept="image/*" />
-                <img src="/BackEndPrg/img/avatar.png">
+            <div class="image-placeholder">
+                <input type="file" id="image-upload-2" accept="image/*">
+                <img src="/BackEndPrg/img/avatar.png" alt="업로드된 이미지">
             </div>
-            <a href="detail.html" class="title">상품명</a>
-            <div class="category">카테고리</div>
-            <div class="price">25,000₩</div>
+            <a href="detail.html" class="title">Samsung Galaxy Tab S9</a>
+            <div class="category">태블릿</div>
+            <div class="price">1,100,000₩</div>
+        </div>
+
+        <!-- 세 번째 카드 -->
+        <div class="card">
+            <div class="image-placeholder">
+                <input type="file" id="image-upload-3" accept="image/*">
+                <img src="/BackEndPrg/img/avatar.png" alt="업로드된 이미지">
+            </div>
+            <a href="detail.html" class="title">LG UltraGear 32" Monitor</a>
+            <div class="category">모니터</div>
+            <div class="price">850,000₩</div>
+        </div>
+
+        <!-- 네 번째 카드 -->
+        <div class="card">
+            <div class="image-placeholder">
+                <input type="file" id="image-upload-4" accept="image/*">
+                <img src="/BackEndPrg/img/avatar.png" alt="업로드된 이미지">
+            </div>
+            <a href="detail.html" class="title">Sony WH-1000XM5</a>
+            <div class="category">헤드폰</div>
+            <div class="price">470,000₩</div>
+        </div>
+
+        <!-- 다섯 번째 카드 -->
+        <div class="card">
+            <div class="image-placeholder">
+                <input type="file" id="image-upload-5" accept="image/*">
+                <img src="/BackEndPrg/img/avatar.png" alt="업로드된 이미지">
+            </div>
+            <a href="detail.html" class="title">Microsoft Surface Laptop 5</a>
+            <div class="category">노트북</div>
+            <div class="price">1,800,000₩</div>
+        </div>
+
+        <!-- 여섯 번째 카드 -->
+        <div class="card">
+            <div class="image-placeholder">
+                <input type="file" id="image-upload-6" accept="image/*">
+                <img src="/BackEndPrg/img/avatar.png" alt="업로드된 이미지">
+            </div>
+            <a href="detail.html" class="title">Dell XPS 13</a>
+            <div class="category">노트북</div>
+            <div class="price">1,600,000₩</div>
+        </div>
+
+        <!-- 일곱 번째 카드 -->
+        <div class="card">
+            <div class="image-placeholder">
+                <input type="file" id="image-upload-7" accept="image/*">
+                <img src="/BackEndPrg/img/avatar.png" alt="업로드된 이미지">
+            </div>
+            <a href="detail.html" class="title">Logitech MX Master 3</a>
+            <div class="category">마우스</div>
+            <div class="price">120,000₩</div>
+        </div>
+
+        <!-- 여덟 번째 카드 -->
+        <div class="card">
+            <div class="image-placeholder">
+                <input type="file" id="image-upload-8" accept="image/*">
+                <img src="/BackEndPrg/img/avatar.png" alt="업로드된 이미지">
+            </div>
+            <a href="detail.html" class="title">Apple AirPods Pro 2</a>
+            <div class="category">이어폰</div>
+            <div class="price">310,000₩</div>
         </div>
     </section>
 
+    <footer class="footer">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="/BackEndPrg/html/contactUs.html">Contact Us</a>
+        </div>
+    </footer>
     <script src="board.js"></script>
 </body>
+
 </html>
